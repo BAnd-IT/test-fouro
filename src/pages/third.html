@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Third case</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="app__heading">
+        <div class="app__title">Задание <span>Три</span></div>
+      </header>
+
+      <div class="app__content">
+        <div class="third-case">
+          <div class="third-case__form">
+            <form class="form js-form" novalidate>
+              <div class="form__fieldset">
+                <label class="form__label" for="phone">Ваш телефон</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Ваш телефон"
+                />
+                <p class="form__error"></p>
+              </div>
+              <div class="form__fieldset">
+                <label class="form__label" for="email">Эл. почта</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Ваш E-mail"
+                />
+                <p class="form__error"></p>
+              </div>
+              <div class="form__fieldset">
+                <label class="form__label" for="firstname">Имя</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Укажите имя"
+                />
+                <p class="form__error"></p>
+              </div>
+              <div class="form__fieldset">
+                <label class="form__label" for="lastname">Фамилия</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Укажите фамилию"
+                />
+                <p class="form__error"></p>
+              </div>
+
+              <div class="form__columns">
+                <div class="form__fieldset">
+                  <label class="form__label" for="company"
+                    >Название компании</label
+                  >
+                  <select
+                    class="form__select js-company-select"
+                    name="company"
+                    id="company"
+                  >
+                    <option></option>
+                  </select>
+                  <p class="form__error"></p>
+                </div>
+
+                <div class="form__fieldset">
+                  <label class="form__label" for="position">Должность</label>
+                  <select
+                    class="form__select js-position-select"
+                    name="position"
+                    id="position"
+                  >
+                    <option></option>
+                  </select>
+                  <p class="form__error"></p>
+                </div>
+              </div>
+
+              <div class="form__fieldset">
+                <button class="form__submit js-submit">Сохранить</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="third-case__table">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Фамилия</th>
+                  <th>Имя</th>
+                  <th>Email</th>
+                  <th>Телефон</th>
+                  <th>Компания</th>
+                  <th>Должность</th>
+                </tr>
+              </thead>
+              <tbody class="js-records"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

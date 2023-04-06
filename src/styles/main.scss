@@ -1,0 +1,85 @@
+@import "./fonts";
+@import "./variables";
+@import "./elements";
+
+.app {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  padding: 0 16px;
+  font-family: $font-base;
+  color: $color-black-main;
+
+  &__heading {
+    padding: 24px 0;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+
+    span {
+      font-weight: 600;
+      color: $color-primary;
+    }
+  }
+
+  &__cases {
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    ul {
+      display: inline-flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        a {
+          display: inline-flex;
+          width: 260px;
+          height: 140px;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          font-family: $font-additional;
+          font-size: 24px;
+          font-weight: 600;
+          border-radius: 8px;
+          background-color: $color-gray-400;
+          transition: all 0.35s ease-in-out;
+
+          span {
+            opacity: 0.7;
+            font-weight: 400;
+          }
+
+          &,
+          &:visited {
+            color: #fff;
+          }
+
+          &:hover {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

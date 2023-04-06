@@ -1,0 +1,31 @@
+@import "../styles/main.scss";
+
+.app__filter {
+  display: none;
+
+  @media (min-width: $breakpoint-lg) {
+    display: flex;
+  }
+}
+
+.gallery-list {
+  --columns: 1;
+
+  @media (min-width: $breakpoint-sm) {
+    --columns: 2;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    --columns: 3;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    &--six-columns {
+      --columns: 6;
+    }
+
+    &--three-columns {
+      --columns: 3;
+    }
+  }
+}
