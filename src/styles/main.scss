@@ -43,20 +43,23 @@
     min-height: 100vh;
 
     ul {
-      display: inline-flex;
       gap: 32px;
       flex-wrap: wrap;
       margin: 0;
       padding: 0;
       list-style-type: none;
 
+      &,
+      li a {
+        display: inline-flex;
+        justify-content: center;
+      }
+
       li {
         a {
-          display: inline-flex;
+          align-items: center;
           width: 260px;
           height: 140px;
-          align-items: center;
-          justify-content: center;
           text-decoration: none;
           font-family: $font-additional;
           font-size: 24px;
