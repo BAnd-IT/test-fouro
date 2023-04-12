@@ -15,7 +15,7 @@
       <div class="app__content">
         <div class="third-case">
           <div class="third-case__form">
-            <form class="form js-form" novalidate>
+            <form class="form js-form">
               <div class="form__fieldset">
                 <label class="form__label" for="phone">Ваш телефон</label>
                 <input
@@ -23,6 +23,7 @@
                   type="text"
                   name="phone"
                   id="phone"
+                  autocomplete="none"
                   placeholder="Ваш телефон"
                 />
                 <p class="form__error"></p>
@@ -31,9 +32,10 @@
                 <label class="form__label" for="email">Эл. почта</label>
                 <input
                   class="form__input"
-                  type="email"
+                  type="text"
                   name="email"
                   id="email"
+                  autocomplete="none"
                   placeholder="Ваш E-mail"
                 />
                 <p class="form__error"></p>
@@ -45,6 +47,7 @@
                   type="text"
                   name="firstname"
                   id="firstname"
+                  autocomplete="none"
                   placeholder="Укажите имя"
                 />
                 <p class="form__error"></p>
@@ -56,6 +59,7 @@
                   type="text"
                   name="lastname"
                   id="lastname"
+                  autocomplete="none"
                   placeholder="Укажите фамилию"
                 />
                 <p class="form__error"></p>

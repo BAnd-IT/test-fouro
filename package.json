@@ -23,7 +23,6 @@
     "webpack-dev-server": "^4.13.1"
   },
   "dependencies": {
-    "email-validator": "^2.0.4",
     "html-webpack-plugin": "^5.5.0",
     "imask": "^6.5.0",
     "jquery": "^3.6.4",
